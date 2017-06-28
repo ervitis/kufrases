@@ -17,7 +17,7 @@ dependencies:
     - mkdir ${HOME}/libs && cd ${HOME}/libs
     - curl -o google-cloud-sdk-161.0.0-linux-x86_64.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-161.0.0-linux-x86_64.tar.gz
     - tar xf google-cloud-sdk-161.0.0-linux-x86_64.tar.gz && ./google-cloud-sdk/install.sh && cd ${HOME}
-    - sudo apt-get install -y php-bcmath php-mbstring
+    - sudo apt-get install -y php7.0-bcmath php7.0-mbstring
     - curl -o google_appengine_1.9.40.zip https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.40.zip
     - unzip -q -d ${HOME} ${HOME}/google_appengine_1.9.40.zip
     - composer install
