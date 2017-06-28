@@ -8,6 +8,7 @@ deployment:
       - pyenv global 2.7.12
     branch: master
     commands:
+      - gcloud app create --region=europe-west --project=kufrases
       - gcloud app deploy app.yaml --version=1 --project=kufrases
       - python e2e_ping.py
 
