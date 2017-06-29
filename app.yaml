@@ -2,5 +2,6 @@ runtime: php55
 api_version: 1
 threadsafe: true
 
-runtime_config:
-  document_root: src
+handlers:
+- url: .*
+  script: src/index.php
