@@ -32,7 +32,7 @@ def get_host_variable():
 def build_appengine_host(host_name):
     assert isinstance(host_name, str) is True
 
-    return 'https://{}.appspot.com'.format(host_name)
+    return 'https://{}.appspot.com/hello/foo'.format(host_name)
 
 
 def change_time_to_sleep(time_to_sleep):
